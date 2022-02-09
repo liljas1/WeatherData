@@ -34,7 +34,7 @@ namespace Weather
 
             var data = text.Split('\t');
 
-            if( data.Length != 8 )
+            if ( data.Length != 8 )
                 return false;
 
             if (!DateTime.TryParse(data[(int)WeatherObservationMetrics.Date_Time].Replace("_", "-"), out DateTime timestamp))
